@@ -3,6 +3,7 @@ import styled from "styled-components";
 import VideoPlayer from "../../components/VideoPlayer";
 import StripePay from "../../components/StripePay";
 import { VideoSrc } from '../../data'
+import BreakPoint from "../../utils/BreackPoint";
 
 const Container = styled.div`
   // display: flex;
@@ -30,13 +31,11 @@ const RectRow = styled.div`
   flex: 1 1 0%;
 `;
 
-
-// const srcUrl = 
-
 class Index extends Component {
   render() {
     return (
-      <Container >
+      <BreakPoint name="desktop">
+      <Container id="desktop-vr">
         <RectRow>
           <Rect>
             <VideoPlayer 
@@ -48,6 +47,7 @@ class Index extends Component {
           </Rect1>
         </RectRow>
       </Container>
+      </BreakPoint>
     );
   }
 }
