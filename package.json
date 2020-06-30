@@ -2,7 +2,7 @@
   "name": "donation-page",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://wearedelovery.github.io/file-cdn/build/donation-page/",
+  "homepage": "https://wearedelovery.github.io/file-cdn/",
   "dependencies": {
     "@material-ui/core": "^4.10.2",
     "@stripe/stripe-js": "^1.7.0",
