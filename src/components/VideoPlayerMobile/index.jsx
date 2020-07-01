@@ -12,7 +12,7 @@ const Index = ({ srcUrl }) => {
             playsInline
             controls
             className="media-player__Video-gqzi7w-5 kueHaM mbildVer"
-            autoPlay
+            autoPlay="autoplay"
           >
             <source
               src={srcUrl}
