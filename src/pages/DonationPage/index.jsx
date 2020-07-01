@@ -8,24 +8,24 @@ import BreakPoint from "../../utils/BreackPoint";
 const Container = styled.div`
   // display: flex;
   // flex-direction: row;
-  height: 100%;
-  width: 100%;
+  // height: 100%;
+  // width: 100%;
 `;
 
 const Rect = styled.div`
   width: 668px;
-  height: 768px;
+  height: 657px;
   background-color: #fff;
 `;
 
 const Rect1 = styled.div`
   width: 698px;
-  height: 768px;
+  height: 100%;
   background-color: #fff;
 `;
 
 const RectRow = styled.div`
-  height: 768px;
+  height: 100%;
   flex-direction: row;
   display: flex;
   flex: 1 1 0%;

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { stripeData } from "../../data";
-import StripeButton from "../StripeButton";
+import StripeButtonMobile from "../StripeButtonMobile";
 import StripeJs from '../../utils/StripeJs'
 
 const Index = () => {
@@ -9,7 +9,7 @@ const Index = () => {
   })
   const stripeDiv = stripeData.map((x) => <div
   id={x.btnId}>
-    <StripeButton
+    <StripeButtonMobile
   id={x.btnId}
   btnId={x.btnId}
   btnCategory={x.btnCategory}
@@ -18,10 +18,10 @@ const Index = () => {
   </div>
 )
   return (
-    <div className="ksdla">
+    <div className="ksdla sfsa">
       <div id="error-message"></div>
-      <div className="dntbtn">
-        <div className="poll__Wrapper-iptlde-5">
+      <div className="dntbtn mbils">
+        <div className="poll__Wrapper-iptlde-5 mbndjs">
         { stripeDiv  }
         </div>
       </div>

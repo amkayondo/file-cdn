@@ -6,56 +6,28 @@ import { VideoSrc } from '../../data'
 import VideoPlayerMobile from "../../components/VideoPlayerMobile";
 import StripePayMobile from '../../components/StripePayMobile'
 
-const { object } = propTypes;
-
-
-const Mobilemode = (props) => {
+const MobileView = (props) => {
   return (
     <BreakPoint name="phone">
-    <Rect id="mobile-vr">
-    <VideoPlayerMobile
+    <Container>
+      <div className="topctnd">
+      <VideoPlayerMobile
             srcUrl={VideoSrc}
             />
-    </Rect>
-    <StripePayMobile/>
+      </div>
+      <div className="btmctnd">
+      <StripePayMobile/>
+      </div>
+    </Container>
     </BreakPoint>
   );
 }
 
-const Rect = styled.div`
+const Container = styled.div`
   display: flex;
-  // width: 360px;
-  height: 2024px;
-  background-color: #E6E6E6;
   flex-direction: column;
-  margin-top: 22px;
-  border-radius: 22px;
-  // margin-left: 7px
+  height: 100vh;
+  width: 100vw;
 `;
 
-const ButtonOverlay = styled.button`
-display: block;
-background: #D62379;
-height: 100%;
-width: 100%;
-color: #fff;
-border: none;
-font-size: 30px;
-border-radius: 22px;
-text-align: center;
-font-weight: 700;
- `;
-const Button = styled.div`
-  width: 200px;
-  height: 60px;
-  background-color: rgba(126,211,33,1);
-  margin-top: 638px;
-  margin-left: 80px;
-  border-radius: 22px;
-`;
-
-Mobilemode.propTypes = {
-  children: object
-}
-
-export default Mobilemode;
+export default MobileView;
